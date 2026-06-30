@@ -1,0 +1,422 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #F8FAFC;
+    color: #0F172A;
+    overflow-x: hidden;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+
+/* Side Bar */
+.sidebar {
+    background: #ffffff;
+    min-height: 100vh;
+    border-right: 1px solid #E2E8F0;
+    padding: 30px 20px;
+}
+
+.sidebar-logo h2 {
+    font-size: 28px;
+    font-weight: 700;
+    color: #2563EB;
+    margin-bottom: 35px;
+}
+
+.sidebar-navigation {
+    list-style: none;
+    padding-left: 0;
+}
+
+.sidebar-navigation li {
+    margin-bottom: 10px;
+}
+
+.sidebar-navigation a {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    text-decoration: none;
+    color: #475569;
+
+    padding: 12px 15px;
+    border-radius: 10px;
+
+    transition: .3s;
+}
+
+.sidebar-navigation a:hover {
+    background: #2563EB;
+    color: white;
+}
+
+.sidebar-navigation i {
+    font-size: 20px;
+}
+
+.sidebar-navigation .active{
+    background:#2563EB;
+    color:white;
+}
+
+/* Top Navbar */
+.top-navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#fff;
+    padding:18px 30px;
+    border-bottom:1px solid #E2E8F0;
+}
+
+.navbar-left{
+    display:flex;
+    align-items:center;
+}
+
+.navbar-right{
+    display:flex;
+    align-items:center;
+    gap:20px;
+}
+
+.nav-search{
+    width:300px;
+    padding:10px 15px;
+    border:1px solid #E2E8F0;
+    border-radius:8px;
+    outline:none;
+    transition:.3s;
+}
+
+.nav-search:focus{
+    border-color:#2563EB;
+}
+
+.navbar-right i,
+.navbar-left i{
+    font-size:22px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.navbar-right i:hover,
+.navbar-left i:hover{
+    color:#2563EB;
+}
+
+.profile-name{
+    font-weight:500;
+}
+
+
+/* Main section */
+
+/* cards */
+.stats-card{
+    padding:30px;
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.stats-card:hover{
+    transform:translateY(-5px);
+}
+
+.card-icon{
+    width:60px;
+    height:60px;
+    border-radius:12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:28px;
+    margin-bottom:20px;
+}
+
+/* icons color */
+.customer-icon{
+    background:#DBEAFE;
+    color:#2563EB;
+}
+
+.leads-icon{
+    background:#FEF3C7;
+    color:#F59E0B;
+}
+
+.employee-icon{
+    background:#DCFCE7;
+    color:#22C55E;
+}
+
+.task-icon{
+    background:#F3E8FF;
+    color:#9333EA;
+}
+
+.meeting-icon{
+    background:#FEE2E2;
+    color:#EF4444;
+}
+
+.revenue-icon{
+    background:#D1FAE5;
+    color:#10B981;
+}
+
+
+
+.stats-number{
+    font-size:32px;
+    font-weight:700;
+    margin-bottom:5px;
+}
+
+.stats-title{
+    color:#64748B;
+    margin-bottom:10px;
+}
+
+.stats-growth{
+    color:#22C55E;
+    font-weight:600;
+    font-size:14px;
+}
+
+/* chart card */
+.chart-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    border:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.chart-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.chart-header h3{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.chart-header p{
+    color:#64748B;
+    margin:0;
+}
+
+.chart-header select{
+    padding:8px 12px;
+    border:1px solid #E2E8F0;
+    border-radius:8px;
+    outline:none;
+    cursor:pointer;
+}
+
+.chart-placeholder{
+    height:320px;
+    background:#F8FAFC;
+    border:2px dashed #CBD5E1;
+    border-radius:12px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Meeting card */
+.meeting-card{
+    background:#fff;
+    padding:25px;
+    border-radius:15px;
+    border:none;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    height:100%;
+}
+
+.meeting-card h3{
+    font-size:22px;
+    font-weight:600;
+    margin-bottom:25px;
+}
+
+.meeting-card ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+.meeting-card li{
+    padding:15px;
+    margin-bottom:15px;
+    background:#F8FAFC;
+    border-radius:10px;
+    border-left:4px solid #2563EB;
+}
+
+.meeting-time{
+    display:block;
+    color:#2563EB;
+    font-weight:600;
+    margin-bottom:5px;
+}
+
+.meeting-title{
+    color:#334155;
+}
+
+/* table */
+
+.table-card{
+    border:none;
+    border-radius:15px; 
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+}
+
+.table-header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:20px;
+}
+
+.table-header h3{
+    font-size:24px;
+    font-weight:600;
+    margin:0;
+}
+
+.table thead th{
+    color:#64748B;
+    font-weight:600;
+    border-bottom:2px solid #E2E8F0;
+}
+
+.table tbody td{
+    padding:18px 10px;
+    vertical-align:middle;
+}
+
+.status{
+    padding:6px 14px;
+    border-radius:20px;
+    font-size:14px;
+    font-weight:600;
+}
+
+.active-status{
+    background:#DCFCE7;
+    color:#16A34A;
+}
+
+.pending-status{
+    background:#FEF3C7;
+    color:#D97706;
+}
+
+.inactive-status{
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
+
+
+/* mobile responsive */
+
+@media (max-width:768px){
+
+.top-navbar{
+    flex-wrap:wrap;
+    gap:15px;
+    padding:15px;
+}
+
+.navbar-right{
+    width:100%;
+    justify-content:space-between;
+
+}
+
+.nav-search{
+    width:100%;
+}
+
+header h1{
+    font-size:40px;
+}
+
+.stats-card{
+    margin-bottom:20px;
+}
+
+.chart-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+.chart-header select{
+    width:100%;
+}
+
+.table-header{
+    flex-direction:column;
+    align-items:flex-start;
+    gap:15px;
+}
+
+}
+
+
+
+/* tablet responsive */
+@media (max-width:992px){
+
+.sidebar{
+    display:none;
+}
+
+.main-content{
+    width:100%;
+}
+
+.top-navbar{
+    padding:15px 20px;
+}
+
+.nav-search{
+    width:220px;
+}
+
+.stats-card{
+    margin-bottom:20px;
+}
+
+.chart-card,
+.meeting-card{
+    margin-top:20px;
+}
+
+}
