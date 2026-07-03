@@ -248,7 +248,7 @@ body {
 
 /* Meeting card */
 .meeting-card{
-    background:#fff;
+    background: #fff;
     padding:25px;
     border-radius:15px;
     border:none;
@@ -366,3 +366,24 @@ body {
 .customer-filter{
     width:200px;
 }
+
+
+/* leads page */
+
+/* badges color */
+.high-priority{
+    background:#FEE2E2;
+    color:#DC2626;
+}
+
+.medium-priority{
+    background:#FEF3C7;
+    color:#D97706;
+}
+
+.low-priority{
+    background:#DCFCE7;
+    color:#16A34A;
+}
+
+/* meeting page */
