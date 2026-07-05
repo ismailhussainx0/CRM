@@ -410,3 +410,137 @@ body {
 .table-bordered th{
     background:#F8FAFC;
 }
+
+
+/* Notification page */
+
+.notification-card{
+    display:flex;
+    align-items:center;
+    gap:20px;
+
+    background:#fff;
+    padding:20px;
+    margin-bottom:20px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+    transition:.3s;
+    cursor:pointer;
+}
+
+.notification-card:hover{
+    transform:translateY(-5px);
+}
+
+.notification-icon{
+    width:60px;
+    height:60px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:12px;
+    font-size:24px;
+}
+
+.notification-content{
+    flex:1;
+}
+
+.notification-content h5{
+    margin-bottom:5px;
+    font-weight:600;
+}
+
+.notification-content p{
+    margin-bottom:5px;
+    color:#64748B;
+}
+
+.notification-content small{
+    color:#94A3B8;
+}
+
+
+
+
+/* Settings */
+
+.settings-card{
+
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.settings-card .card-body{
+
+    padding:30px;
+
+}
+
+.settings-card label{
+
+    font-weight:600;
+    margin-bottom:8px;
+
+}
+
+.settings-card .form-control,
+.settings-card .form-select{
+
+    padding:12px;
+    border-radius:10px;
+
+}
+
+.settings-card textarea{
+    resize:none;
+}
+
+
+/* Profile */
+
+.profile-card{
+
+    border:none;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+.profile-card .card-body{
+    padding:40px;
+}
+
+.profile-image{
+    width:150px;
+    height:150px;
+
+    margin:auto;
+    border-radius:50%;
+
+    background:#DBEAFE;
+    color:#2563EB;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    font-size:80px;
+}
+
+.profile-card h3{
+    font-weight:700;
+}
+
+.profile-card h6{
+    color:#2563EB;
+    font-weight:600;
+}
+
+.profile-card p{
+    color:#64748B;
+}
