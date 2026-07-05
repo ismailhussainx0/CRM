@@ -5,7 +5,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
+
 
 body {
     font-family: 'Poppins', sans-serif;
@@ -79,6 +81,7 @@ body {
     background:#fff;
     padding:18px 30px;
     border-bottom:1px solid #E2E8F0;
+    
 }
 
 .navbar-left{
@@ -386,4 +389,24 @@ body {
     color:#16A34A;
 }
 
-/* meeting page */
+/* calender page css */
+/* Calendar */
+
+.table-bordered td,
+.table-bordered th{
+    height:80px;
+    vertical-align:middle;
+}
+
+.table-bordered td{
+    cursor:pointer;
+    transition:.3s;
+}
+
+.table-bordered td:hover{
+    background:#DBEAFE;
+}
+
+.table-bordered th{
+    background:#F8FAFC;
+}
